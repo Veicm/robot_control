@@ -1,11 +1,17 @@
 # robot_controll
-Das ist eine sammlung von verschiedenen micro python Programmen mit welchen man einen eigenen SMARS Roboter bauen kann. Eine genau anleitung zum bau findet ihr unter diesem link: https://bookstack.jb-net.eu/books/smars-roboter
+Das ist eine Sammlung von verschiedenen MicroPython-Programmen, mit denen man einen eigenen SMARS-Roboter bauen kann. Eine genaue Anleitung zum Bau findet ihr unter diesem Link: https://bookstack.jb-net.eu/books/smars-roboter.
 
 # Konfiguration
-Der code ist für micropython auf einem Raspberry pi pico ohen W-lan modul geschrieben er unterstützt je nach script die folgenden teile:
--Motoren mit Motortreiber 
--Ultraschallsensor
--(eingeschränkt) Infrarotsensor
--(auf der webseite nicht erwehnt) joystick
+Der Code ist für MicroPython auf einem Raspberry Pi Pico ohne WLAN-Modul geschrieben. Er unterstützt, je nach Script, die folgenden Teile:
+- Motoren mit Motortreiber
+- Ultraschallsensor
+- (eingeschränkt) Infrarotsensor
+- (auf der Webseite nicht erwähnt) Joystick
 
-#Programmbeschreibung
+# In Arbeit
+- Eine Erklärung zur Funktion jedes Scripts auf Deutsch und Englisch
+- Eine Erklärung zu jeder Funktion im Script
+- Eine englische Version der Scripts
+
+# Credits
+Der Code basiert in Teilen auf der robotlibrary (https://github.com/marjaco/robotlibrary) von @marjaco (https://github.com/marjaco). @marjaco hat außerdem an Teilen der Scripts mitgewirkt, die nicht in gleicher oder ähnlicher Form in der robotlibrary stehen.
