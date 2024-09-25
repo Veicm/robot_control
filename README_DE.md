@@ -5,6 +5,7 @@ Das ist eine Sammlung von verschiedenen MicroPython-Programmen, mit denen man ei
 Der Code ist für MicroPython auf einem Raspberry Pi Pico ohne WLAN-Modul geschrieben. Er unterstützt, je nach Script, die folgenden Teile:
 - Motoren mit Motortreiber
 - Ultraschallsensor
+- eine kleine Ampel
 - (eingeschränkt) Infrarotsensor
 - (auf der Webseite nicht erwähnt) Joystick
 
