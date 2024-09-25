@@ -7,3 +7,5 @@ Der code ist für micropython auf einem Raspberry pi pico ohen W-lan modul gesch
 -Ultraschallsensor
 -(eingeschränkt) Infrarotsensor
 -(auf der webseite nicht erwehnt) joystick
+
+#Programmbeschreibung
