@@ -7,6 +7,7 @@ A detailed guide for building it can be found at this link: https://bookstack.jb
 The code is written for MicroPython on a Raspberry Pi Pico without a Wi-Fi module. Depending on the script, it supports the following components:
 - Motors with motor drivers
 - Ultrasonic sensor
+- a small traffic light
 - (limited) Infrared sensor
 - (not mentioned on the website) Joystick
 
