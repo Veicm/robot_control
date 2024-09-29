@@ -1,39 +1,41 @@
+#Mit diesem Code wird die Ampel gesteuert es sind auch einige Funktionen vor definiert
 import utime
 from machine import Pin
 
 
-red=Pin(20,Pin.OUT)
-blue=Pin(19,Pin.OUT)
-green=Pin(21,Pin.OUT)
+rotes_licht=Pin(20,Pin.OUT) #für die rote Led wird Pin 20 definiert
+gelbes_licht=Pin(19,Pin.OUT) #für die gelbe Led wird Pin 19 definiert
+grünes_licht=Pin(21,Pin.OUT) #für die grüne Led wird Pin 21 definiert
+#Bite überprüfe ob die angegeben Pins zu deiner Schaltung passen und ändere sie ggf.
 
 #grund definition
 
 def rot_an():
-    red.value(1)
+    rotes_licht.value(1) #die rote Led wird eingeschaltet
 
 def rot_aus():
-    red.value(0)
+    rotes_licht.value(0) #die rote Led wird ausgeschaltet
 
-def blau_an():
-    blue.value(1)
+def gelb_an():
+    gelbes_licht.value(1) #die gelbe Led wird eingeschaltet
 
-def blau_aus():
-    blue.value(0)
+def gelb_aus():
+    gelbes_licht.value(0) #die gelbe Led wird ausgeschaltet
 
 def grün_an():
-    green.value(1)
+    grünes_licht.value(1) #die grüne Led wird eingeschaltet
 
 def grün_aus():
-    green.value(0)
+    grünes_licht.value(0) #die grüne Led wird ausgeschaltet
 
 def alle_an():
     rot_an()
-    blau_an()
+    gelb_an()
     grün_an()
 
 def alle_aus():
     rot_aus()
-    blau_aus()
+    gelb_aus()
     grün_aus()
 
 #grund-befehl definition
@@ -41,36 +43,36 @@ def rot_only():
     alle_aus()
     rot_an()
     
-def blau_only():
+def gelb_only():
     alle_aus()
-    blau_an()
+    gelb_an()
     
 def grün_only():
     alle_aus()
     grün_an()
     
-def rot_blinken(s,d):
+def rot_blinken(s,d): #Die rote Led wird auf auf blinken gestellt (s gibt die geschwindigkeint an, d gibt die wiederholungen an)
     while 0<d:
         d=d-1
         rot_an()
         utime.sleep(1/s)
         rot_aus()
         
-def blau_blinken(s,d):
+def gelb_blinken(s,d): #Die gelbe Led wird auf blinken gestellt (s gibt die geschwindigkeint an, d gibt die wiederholungen an)
     while 0<d:
         d=d-1
-        blau_an()
+        gelb_an()
         utime.sleep(1/s)
-        blau_aus()
+        gelb_aus()
 
-def grün_blinken(s,d):
+def grün_blinken(s,d): #Die grüne Led wird auf blinken gestellt (s gibt die geschwindigkeint an, d gibt die wiederholungen an)
     while 0<d:
         d=d-1
         grün_an()
         utime.sleep(1/s)
         grün_aus()
 
-def alle_blinken(s,d):
+def alle_blinken(s,d): #Alle Leds werden auf blinken gestellt (s gibt die geschwindigkeint an, d gibt die wiederholungen an)
     while 0<d:
         d=d-1
         alle_an()
@@ -79,18 +81,18 @@ def alle_blinken(s,d):
     
 #Komplex Befehl difinition
 
-def disco(s,d):
+def disco(s,d): #Ein Disco-Modus wird eingeschaltet (s gibt die geschwindigkeint an, d gibt die wiederholungen an)
     while 0<d:
         d=d-1
         alle_an()
         utime.sleep(2/s)
         rot_only()
         utime.sleep(1/s)
-        blau_only()
+        gelb_only()
         utime.sleep(1/s)
         grün_only()
         utime.sleep(1/s)
-        blau_an()
+        gelb_an()
         utime.sleep(1/s)
         rot_an()
         utime.sleep(2/s)
