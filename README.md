@@ -11,10 +11,18 @@ The code is written for MicroPython on a Raspberry Pi Pico without a Wi-Fi modul
 - (limited) Infrared sensor
 - (not mentioned on the website) Joystick
 
+# Wiki
+Here you can find all information and explanations about the code: https://github.com/Veicm/robot_controll/wiki
+
+# Support
+If you need help, have questions, a bug endekt, has an idea for a new function or something else I can be reached under this link: https://github.com/Veicm/robot-controll/issues
+(click on "new issue")
+
 # coming soon
 - An explanation of each script’s functionality in both German and English:
 - An explanation of each function in the script
 - An English version of the scripts
+- Completion of the wiki
 
 # credits
 The code is partially based on the RobotLibrary (https://github.com/marjaco/robotlibrary) by @marjaco(https://github.com/marjaco).
