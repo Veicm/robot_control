@@ -1,5 +1,5 @@
 (German version can be found in README_DE.md)
-# robot_controll
+# robot_control
 This is a collection of various MicroPython programs that you can use to build your own SMARS robot.
 A detailed guide for building it can be found at this link: https://bookstack.jb-net.eu/books/smars-roboter.
 
