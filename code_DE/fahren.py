@@ -53,7 +53,5 @@ def abbremsen(s,j): # "s" diefiniert die angestrebte Geschwindigkeit "j" diefini
         utime.sleep_ms(80-i+200)
         if s <15:
           anhalten
-          
-        
+                  
 #-------Code ab hier------------------------------------------------------------------------------------------
-
