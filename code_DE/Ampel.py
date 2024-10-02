@@ -100,6 +100,3 @@ def disco(s,d): #Ein Disco-Modus wird eingeschaltet (s gibt die geschwindigkeint
         utime.sleep(3/s)
 
 #----Code ab Hier------------------------------------------------------------------------------
-
-
-disco(15,500)
