@@ -52,6 +52,7 @@ def abbremsen(s,j): # "s" diefiniert die angestrebte Geschwindigkeit "j" diefini
         motor_rechts.setSpeed(i)
         utime.sleep_ms(80-i+200)
         if i <15:
-          anhalten
+         i=s 
+         anhalten
                   
 #-------Code ab hier------------------------------------------------------------------------------------------
