@@ -25,5 +25,5 @@ If you need help, have questions, a bug endekt, has an idea for a new function o
 - Completion of the wiki
 
 # credits
-The code is partially based on the RobotLibrary (https://github.com/marjaco/robotlibrary) by @marjaco(https://github.com/marjaco).
-Additionally, @marjaco contributed to parts of the scripts that do not appear in the RobotLibrary in the same or a similar form.
+The code is partially based on the [RobotLibrary](https://github.com/marjaco/robotlibrary) by [@marjaco](https://github.com/marjaco).
+Additionally, [@marjaco](https://github.com/marjaco) contributed to parts of the scripts that do not appear in the RobotLibrary in the same or a similar form.
