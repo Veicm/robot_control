@@ -23,4 +23,4 @@ Falls man Hilfe braucht, Fragen hat, ein Bug endekt, eine Idee für eine neue Fu
 - Fertigstellung des Wikis
 
 # Credits
-Der Code basiert in Teilen auf der robotlibrary (https://github.com/marjaco/robotlibrary) von @marjaco (https://github.com/marjaco). @marjaco hat außerdem an Teilen der Scripts mitgewirkt, die nicht in gleicher oder ähnlicher Form in der robotlibrary stehen.
+Der Code basiert in Teilen auf der [robotlibrary](https://github.com/marjaco/robotlibrary) von [@marjaco](https://github.com/marjaco). [@marjaco](https://github.com/marjaco) hat außerdem an Teilen der Scripts mitgewirkt, die nicht in gleicher oder ähnlicher Form in der robotlibrary stehen.
