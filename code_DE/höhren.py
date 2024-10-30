@@ -1,3 +1,4 @@
+#Mit diesem Code wird die vom Ultraschallsensor erkannte Distanz in cm angegeben
 from ultrasonic import Ultra #Importiere die Funktion Ultra
 ultra = Ultra(16)
 
