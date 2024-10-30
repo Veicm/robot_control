@@ -4,7 +4,7 @@ import utime
 class Motor:
     
     def __init__(self, pinNo):
-        self.MAX_SPEED = 60000 # The absolute maximum is: 65535. # 39321 für Akku
+        self.MAX_SPEED = 60000 # Das Absulute Maximum ist: 65535. # 39321 für den Akku
         self.gpio = pinNo
         self._on = False
         self.speed=0
