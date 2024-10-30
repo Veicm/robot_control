@@ -1,6 +1,6 @@
-from ultrasonic import Ultra
+from ultrasonic import Ultra #Importiere die Funktion Ultra
 ultra = Ultra(16)
-# Drive 
+
 
 
 def dis(d):
@@ -8,4 +8,4 @@ def dis(d):
    pass
  stop()
  
-dis(1)
+dis(1)#passe diesen Wert an um die mindest Distanz festzulegen
