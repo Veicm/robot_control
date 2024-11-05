@@ -1,3 +1,4 @@
+# Dieses Programm läst den Roboter Fahren bis ein Hindernes kommt dann dreht er sich und fährt weiter.
 # import motor
 import utime
 from machine import Pin
@@ -9,7 +10,6 @@ motor_left= BiMotor(11) # Initializing pins 11 and 12 for left motor.
 motor_right= BiMotor(14) # Initializing pins 14 and 15 for right motor.
 
 #import led
-
 #led=Pin("LED", Pin.OUT) # Für den Pico mit eingebautem WLAN
 led=Pin(25, Pin.OUT) # Für den Pico ohne WLAN
 
@@ -18,17 +18,11 @@ red=Pin(18,Pin.OUT)
 yellow=Pin(19,Pin.OUT)
 green=Pin(20,Pin.OUT)
 
-
-
-
 #import Ultraschall
 ultra = Ultra(16)
 
-
-
 #import Infrarot
 ir=Pin(21,Pin.IN,Pin.PULL_UP)
-
 
 
 #motor shortcut bibliothek
@@ -126,6 +120,7 @@ def tcasr(d):
   anhalten()
   
 #Ampel
+#für eine genauere Beschreibung öffne Ampel.py oder den Wiki eintrag zu diesem Script
   
 #grund definition
 
@@ -260,27 +255,32 @@ def linie_folgen():
 
     
 
-#code ab hier----------------------------------------------------------------
-utime.sleep(2)
-x=0
-beschleunigung(80)
-while True:
- u=ultra.getDist()
- while u<20:
-  u=ultra.getDist()
- 
-  if x%2 ==0 :
-      an()
-      tcasr(20)
-      u=ultra.getDist()
-  else:
-      an()
-      tcasl(20)
-      u=ultra.getDist()
- 
- utime.sleep(0.3)
- aus()
- geradeaus(80)
- x=x+1
- 
-anhalten()
+def main(geschwindigkeit)
+    utime.sleep(2)
+    x=0
+    beschleunigung(geschwindigkeit)
+    try:
+        while True:
+            u=ultra.getDist()
+            while u<20:
+                u=ultra.getDist()
+                
+                if x%2 ==0 :
+                    an()
+                    tcasr(20)
+                    u=ultra.getDist()
+                else:
+                    an()
+                    tcasl(20)
+                    u=ultra.getDist()
+                
+                utime.sleep(0.3)
+                aus()
+                geradeaus(geschwindigkeit)
+                x=x+1
+    except KeyboardInterrupt:
+        anhalten()
+        print("Das Programm wurde beendet.")
+
+# code ab hier -----------------------------------------
+main(80)
