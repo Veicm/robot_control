@@ -99,4 +99,4 @@ def disco(s,d): #Ein Disco-Modus wird eingeschaltet (s gibt die geschwindigkeint
         alle_aus()
         utime.sleep(3/s)
 
-#----Code ab Hier------------------------------------------------------------------------------
+#----Code ab Hier--------------------------------------------------------------------------------------------------------------
